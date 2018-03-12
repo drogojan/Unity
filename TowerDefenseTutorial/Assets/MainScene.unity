@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657868, g: 0.49641263, b: 0.57481706, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657868, g: 0.4964127, b: 0.57481724, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -10570,6 +10570,7 @@ MonoBehaviour:
     type: 2}
   timeBetweenWaves: 5
   spwanPoint: {fileID: 2038059839}
+  waveCountDownText: {fileID: 1404399200}
 --- !u!1001 &872017667
 Prefab:
   m_ObjectHideFlags: 0
@@ -18549,7 +18550,7 @@ GameObject:
   - component: {fileID: 1404399201}
   - component: {fileID: 1404399200}
   m_Layer: 5
-  m_Name: Text
+  m_Name: WaveCountdownTimer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
