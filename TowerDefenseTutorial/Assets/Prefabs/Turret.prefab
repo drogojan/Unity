@@ -11,6 +11,21 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 1688835723339460}
   m_IsPrefabParent: 1
+--- !u!1 &1053045508949440
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4476953688352120}
+  m_Layer: 0
+  m_Name: FirePoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &1452119105949884
 GameObject:
   m_ObjectHideFlags: 0
@@ -53,7 +68,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4515766774370380}
-  - component: {fileID: 114985955972292128}
+  - component: {fileID: 114331001196291868}
   m_Layer: 0
   m_Name: Turret
   m_TagString: Untagged
@@ -82,11 +97,12 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1796622118103862}
-  m_LocalRotation: {x: -0, y: 0.8337507, z: -0, w: -0.5521412}
+  m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
   m_LocalPosition: {x: 0, y: 0.723, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4735959855116932}
+  - {fileID: 4476953688352120}
   m_Father: {fileID: 4515766774370380}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
@@ -102,6 +118,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 4515766774370380}
   m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4476953688352120
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1053045508949440}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.62, z: 2.73}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4241481205511452}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4515766774370380
 Transform:
@@ -216,7 +245,7 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1452119105949884}
   m_Mesh: {fileID: 4300000, guid: 0d9ffd0b7f217cb4ab441f7455669f6d, type: 3}
---- !u!114 &114985955972292128
+--- !u!114 &114331001196291868
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -228,5 +257,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   range: 15
+  fireRate: 1
   enemyTag: Enemy
   partToRotate: {fileID: 4241481205511452}
+  turnSpeed: 10
+  bulletPrefab: {fileID: 1429323784287706, guid: 9c566a119f4934c4c9f0dcf1d924e916,
+    type: 2}
+  firePoint: {fileID: 4476953688352120}
